@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Defines an HTML5 document. -->
+<html lang="en">
+<!-- Starts the document. -->
+<head>
+<!-- Starts metadata. -->
+<meta charset="UTF-8">
+<!-- Sets character encoding. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Enables responsive design. -->
+<meta name="description" content="Shop modern unisex clothing at UNIQ WEAR.">
+<!-- Adds page description. -->
+<title>Shop | UNIQ WEAR</title>
+<!-- Sets page title. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3EU%3C/text%3E%3C/svg%3E">
+<!-- Creates favicon. -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Loads external CSS. -->
+</head>
+<!-- Ends metadata. -->
+<body>
+<!-- Starts body. -->
+<header class="site-header">
+<!-- Creates header. -->
+<nav class="navbar container" aria-label="Main navigation">
+<!-- Creates navigation. -->
+<a class="brand" href="index.html">UNIQ <span>WEAR</span></a>
+<!-- Displays brand. -->
+<button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+<!-- Creates mobile menu button. -->
+<div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="shop.html">Shop</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a class="cart-link" href="#cart">Cart <span id="cartCount">0</span></a></div>
+<!-- Contains navigation links. -->
+</nav>
+<!-- Ends navigation. -->
+</header>
+<!-- Ends header. -->
+
+<main>
+<!-- Starts main content. -->
+<section class="page-hero">
+<!-- Creates shop page hero. -->
+<div class="container page-hero-inner reveal"><p class="eyebrow">THE SHOP</p><h1>Pieces for <span>every wardrobe.</span></h1><p>Browse the collection, filter by category, search by name, and build your cart.</p></div>
+<!-- Displays shop introduction. -->
+</section>
+<!-- Ends page hero. -->
+
+<section class="section container">
+<!-- Creates product section. -->
+<div class="shop-toolbar reveal">
+<!-- Creates shopping controls. -->
+<div class="search-box"><label class="sr-only" for="productSearch">Search products</label><input id="productSearch" type="search" placeholder="Search clothing..."></div>
+<!-- Creates product search. -->
+<select id="categoryFilter" aria-label="Filter by category"><option value="All">All categories</option><option>T-Shirts</option><option>Hoodies</option><option>Shirts</option><option>Jeans</option><option>Trousers</option><option>Jackets</option><option>Dresses</option><option>Shorts</option><option>Accessories</option></select>
+<!-- Creates category filter. -->
+<select id="sortProducts" aria-label="Sort products"><option value="default">Sort products</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select>
+<!-- Creates product sorting. -->
+</div>
+<!-- Ends shop controls. -->
+<div class="product-grid shop-products" id="shopProducts"></div>
+<!-- JavaScript renders all products here. -->
+<p class="empty-state" id="emptyProducts" hidden>No products match your search.</p>
+<!-- Displays a no-results message. -->
+</section>
+<!-- Ends product section. -->
+
+<section class="cart-section section-alt" id="cart">
+<!-- Creates the shopping cart section. -->
+<div class="container reveal">
+<!-- Centers cart content. -->
+<div class="section-heading"><p class="eyebrow">YOUR SELECTION</p><h2>Shopping cart.</h2></div>
+<!-- Displays cart heading. -->
+<div class="cart-layout">
+<!-- Creates cart and summary columns. -->
+<div class="cart-items" id="cartItems"></div>
+<!-- JavaScript renders cart items here. -->
+<aside class="cart-summary"><h3>Order summary</h3><div class="summary-row"><span>Subtotal</span><strong id="cartTotal">₦0</strong></div><p>Demo cart only. No real payment is processed.</p><button class="btn btn-dark" id="checkoutButton">Proceed to checkout</button></aside>
+<!-- Displays the cart summary. -->
+</div>
+<!-- Ends cart layout. -->
+</div>
+<!-- Ends centered cart content. -->
+</section>
+<!-- Ends cart section. -->
+</main>
+<!-- Ends main content. -->
+
+<footer class="footer">
+<!-- Creates footer. -->
+<div class="container footer-grid"><div><a class="brand brand-footer" href="index.html">UNIQ <span>WEAR</span></a><p>Modern unisex fashion for everyday expression.</p></div><div><h3>Explore</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div><div><h3>Contact</h3><p>Use our contact page for current store details.</p><a href="contact.html">Get in touch →</a></div></div>
+<!-- Displays footer columns. -->
+<div class="container footer-bottom"><span>© 2026 UNIQ WEAR. All rights reserved.</span><span>Built with HTML, CSS & JavaScript.</span></div>
+<!-- Displays footer bottom. -->
+</footer>
+<!-- Ends footer. -->
+<script src="js/script.js"></script>
+<!-- Loads JavaScript. -->
+</body>
+<!-- Ends body. -->
+</html>
+<!-- Ends document. -->

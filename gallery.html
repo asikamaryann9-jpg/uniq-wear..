@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Defines an HTML5 document. -->
+<html lang="en">
+<!-- Starts the document. -->
+<head>
+<!-- Starts metadata. -->
+<meta charset="UTF-8">
+<!-- Sets character encoding. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Enables responsive design. -->
+<meta name="description" content="Explore the UNIQ WEAR fashion gallery.">
+<!-- Adds page description. -->
+<title>Gallery | UNIQ WEAR</title>
+<!-- Sets page title. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3EU%3C/text%3E%3C/svg%3E">
+<!-- Creates favicon. -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Loads external CSS. -->
+</head>
+<!-- Ends metadata. -->
+<body>
+<!-- Starts body. -->
+<header class="site-header">
+<!-- Creates header. -->
+<nav class="navbar container" aria-label="Main navigation">
+<!-- Creates navigation. -->
+<a class="brand" href="index.html">UNIQ <span>WEAR</span></a>
+<!-- Displays brand. -->
+<button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+<!-- Creates mobile menu button. -->
+<div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="about.html">About</a><a href="shop.html">Shop</a><a class="active" href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a class="cart-link" href="shop.html#cart">Cart <span id="cartCount">0</span></a></div>
+<!-- Contains navigation links. -->
+</nav>
+<!-- Ends navigation. -->
+</header>
+<!-- Ends header. -->
+
+<main>
+<!-- Starts main content. -->
+<section class="page-hero">
+<!-- Creates gallery hero. -->
+<div class="container page-hero-inner reveal"><p class="eyebrow">VISUAL STORIES</p><h1>See the collection in <span>motion.</span></h1><p>Explore looks, textures, silhouettes, and styling ideas from the UNIQ WEAR world.</p></div>
+<!-- Displays gallery introduction. -->
+</section>
+<!-- Ends gallery hero. -->
+
+<section class="section container">
+<!-- Creates gallery section. -->
+<div class="gallery-grid reveal">
+<!-- Creates responsive image grid. -->
+<button class="gallery-item tall" data-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=85" alt="Modern fashion look"></button>
+<!-- Creates gallery image one. -->
+<button class="gallery-item" data-image="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=85" alt="Contemporary clothing look"></button>
+<!-- Creates gallery image two. -->
+<button class="gallery-item" data-image="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85" alt="T-shirt fashion"></button>
+<!-- Creates gallery image three. -->
+<button class="gallery-item" data-image="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85" alt="Hoodie fashion"></button>
+<!-- Creates gallery image four. -->
+<button class="gallery-item wide" data-image="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1400&q=85"><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85" alt="Jacket collection"></button>
+<!-- Creates gallery image five. -->
+<button class="gallery-item" data-image="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=85" alt="Denim fashion"></button>
+<!-- Creates gallery image six. -->
+<button class="gallery-item" data-image="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=85" alt="Streetwear style"></button>
+<!-- Creates gallery image seven. -->
+<button class="gallery-item" data-image="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Fashion shopping"></button>
+<!-- Creates gallery image eight. -->
+</div>
+<!-- Ends gallery grid. -->
+</section>
+<!-- Ends gallery section. -->
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+<!-- Creates the hidden image lightbox. -->
+<button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button>
+<!-- Creates the lightbox close button. -->
+<img id="lightboxImage" src="" alt="Expanded fashion image">
+<!-- Holds the expanded gallery image. -->
+</div>
+<!-- Ends lightbox. -->
+</main>
+<!-- Ends main content. -->
+
+<footer class="footer">
+<!-- Creates footer. -->
+<div class="container footer-grid"><div><a class="brand brand-footer" href="index.html">UNIQ <span>WEAR</span></a><p>Modern unisex fashion for everyday expression.</p></div><div><h3>Explore</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></div><div><h3>Contact</h3><p>Use our contact page for current store details.</p><a href="contact.html">Get in touch →</a></div></div>
+<!-- Displays footer content. -->
+<div class="container footer-bottom"><span>© 2026 UNIQ WEAR. All rights reserved.</span><span>Built with HTML, CSS & JavaScript.</span></div>
+<!-- Displays footer bottom. -->
+</footer>
+<!-- Ends footer. -->
+<script src="js/script.js"></script>
+<!-- Loads JavaScript. -->
+</body>
+<!-- Ends body. -->
+</html>
+<!-- Ends document. -->
