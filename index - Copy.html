@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- Defines this document as an HTML5 document. -->
+<html lang="en">
+<!-- Starts the HTML document and declares English as the page language. -->
+<head>
+<!-- Starts the metadata section of the page. -->
+<meta charset="UTF-8">
+<!-- Sets the character encoding so text displays correctly. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Makes the website responsive on phones, tablets, and desktops. -->
+<meta name="description" content="UNIQ WEAR is a modern unisex fashion store offering stylish clothing for everyone.">
+<!-- Provides a search-engine description for the home page. -->
+<title>UNIQ WEAR | Unisex Fashion</title>
+<!-- Sets the browser tab title. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3EU%3C/text%3E%3C/svg%3E">
+<!-- Creates a simple text favicon without requiring another image file. -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Loads the external stylesheet. -->
+</head>
+<!-- Ends the metadata section. -->
+<body>
+<!-- Starts the visible page content. -->
+<header class="site-header">
+<!-- Creates the sticky website header. -->
+<nav class="navbar container" aria-label="Main navigation">
+<!-- Creates the main navigation area. -->
+<a class="brand" href="index.html" aria-label="UNIQ WEAR home">UNIQ <span>WEAR</span></a>
+<!-- Displays the brand name and links it to the home page. -->
+<button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+<!-- Creates the mobile navigation button. -->
+<div class="nav-links" id="navLinks">
+<!-- Holds the navigation links. -->
+<a class="active" href="index.html">Home</a>
+<!-- Links to the home page. -->
+<a href="about.html">About</a>
+<!-- Links to the about page. -->
+<a href="shop.html">Shop</a>
+<!-- Links to the shop page. -->
+<a href="gallery.html">Gallery</a>
+<!-- Links to the gallery page. -->
+<a href="contact.html">Contact</a>
+<!-- Links to the contact page. -->
+<a class="cart-link" href="shop.html#cart">Cart <span id="cartCount">0</span></a>
+<!-- Displays the cart link and current cart count. -->
+</div>
+<!-- Ends the navigation links container. -->
+</nav>
+<!-- Ends the navigation area. -->
+</header>
+<!-- Ends the website header. -->
+
+<main>
+<!-- Starts the main page content. -->
+<section class="hero">
+<!-- Creates the main landing section. -->
+<div class="hero-content container">
+<!-- Centers the hero content. -->
+<div class="hero-text reveal">
+<!-- Holds the hero text. -->
+<p class="eyebrow">EVERY STYLE. EVERYONE.</p>
+<!-- Displays the small fashion tagline. -->
+<h1>Wear your identity with <span>confidence.</span></h1>
+<!-- Displays the main hero heading. -->
+<p>Discover modern unisex clothing designed for comfort, confidence, and everyday expression.</p>
+<!-- Provides the hero description. -->
+<div class="hero-actions">
+<!-- Holds the hero action buttons. -->
+<a class="btn btn-dark" href="shop.html">Shop Collection</a>
+<!-- Sends customers to the shop. -->
+<a class="btn btn-light" href="gallery.html">Explore Gallery</a>
+<!-- Sends customers to the gallery. -->
+</div>
+<!-- Ends the hero action buttons. -->
+</div>
+<!-- Ends the hero text. -->
+<div class="hero-visual reveal">
+<!-- Holds the hero image. -->
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=85" alt="Fashion model wearing modern clothing">
+<!-- Displays an attractive fashion image. -->
+<div class="hero-badge">NEW<br><strong>DROP</strong></div>
+<!-- Displays a small collection badge. -->
+</div>
+<!-- Ends the hero image area. -->
+</div>
+<!-- Ends the hero content. -->
+</section>
+<!-- Ends the hero section. -->
+
+<section class="section container reveal">
+<!-- Creates the featured categories section. -->
+<div class="section-heading">
+<!-- Creates the section heading area. -->
+<p class="eyebrow">SHOP BY STYLE</p>
+<!-- Displays the section label. -->
+<h2>Find your everyday uniform.</h2>
+<!-- Displays the section heading. -->
+</div>
+<!-- Ends the heading area. -->
+<div class="category-grid">
+<!-- Creates the category grid. -->
+<a class="category-card" href="shop.html?category=T-Shirts"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="T-shirts"><span>T-Shirts</span></a>
+<!-- Creates the T-shirt category card. -->
+<a class="category-card" href="shop.html?category=Hoodies"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=80" alt="Hoodies"><span>Hoodies</span></a>
+<!-- Creates the hoodie category card. -->
+<a class="category-card" href="shop.html?category=Jackets"><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=80" alt="Jackets"><span>Jackets</span></a>
+<!-- Creates the jacket category card. -->
+<a class="category-card" href="shop.html?category=Jeans"><img src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80" alt="Jeans"><span>Jeans</span></a>
+<!-- Creates the jeans category card. -->
+</div>
+<!-- Ends the category grid. -->
+</section>
+<!-- Ends the categories section. -->
+
+<section class="section section-alt">
+<!-- Creates the featured products section. -->
+<div class="container reveal">
+<!-- Centers the product content. -->
+<div class="section-heading split-heading">
+<!-- Creates a split heading layout. -->
+<div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured pieces.</h2></div>
+<!-- Displays the section title. -->
+<a class="text-link" href="shop.html">View all products →</a>
+<!-- Links to the full shop. -->
+</div>
+<!-- Ends the split heading. -->
+<div class="product-grid" id="featuredProducts"></div>
+<!-- JavaScript inserts featured products here. -->
+</div>
+<!-- Ends the centered product content. -->
+</section>
+<!-- Ends the featured products section. -->
+
+<section class="section container reveal">
+<!-- Creates the benefits section. -->
+<div class="benefits-grid">
+<!-- Creates a responsive benefits grid. -->
+<article class="benefit"><strong>01</strong><h3>Quality First</h3><p>Thoughtfully selected fabrics and dependable construction for everyday wear.</p></article>
+<!-- Displays the quality benefit. -->
+<article class="benefit"><strong>02</strong><h3>Made for Everyone</h3><p>Styles designed to be flexible, expressive, and easy to make your own.</p></article>
+<!-- Displays the unisex benefit. -->
+<article class="benefit"><strong>03</strong><h3>Easy Shopping</h3><p>Simple browsing, clear product information, and a smooth cart experience.</p></article>
+<!-- Displays the shopping benefit. -->
+<article class="benefit"><strong>04</strong><h3>Style Without Limits</h3><p>From relaxed basics to statement pieces, build a wardrobe that feels like you.</p></article>
+<!-- Displays the style benefit. -->
+</div>
+<!-- Ends the benefits grid. -->
+</section>
+<!-- Ends the benefits section. -->
+
+<section class="collection-banner reveal">
+<!-- Creates the large promotional collection section. -->
+<div class="container collection-content">
+<!-- Centers the collection content. -->
+<p class="eyebrow">THE LATEST COLLECTION</p>
+<!-- Displays the collection label. -->
+<h2>Minimal design. Maximum expression.</h2>
+<!-- Displays the collection headline. -->
+<a class="btn btn-light" href="shop.html">Discover the drop</a>
+<!-- Links to the shop. -->
+</div>
+<!-- Ends the collection content. -->
+</section>
+<!-- Ends the collection banner. -->
+
+<section class="section container reveal">
+<!-- Creates the reviews section. -->
+<div class="section-heading"><p class="eyebrow">CUSTOMER NOTES</p><h2>What shoppers are saying.</h2></div>
+<!-- Displays the review heading. -->
+<div class="review-grid">
+<!-- Creates the review grid. -->
+<article class="review"><p>“The fit is comfortable and the pieces are easy to style with what I already own.”</p><strong>— Amara</strong></article>
+<!-- Displays a sample review. -->
+<article class="review"><p>“I love how simple the collection is. Everything feels modern without trying too hard.”</p><strong>— Daniel</strong></article>
+<!-- Displays a sample review. -->
+<article class="review"><p>“The shopping layout is straightforward and the product photos make choosing easy.”</p><strong>— Jordan</strong></article>
+<!-- Displays a sample review. -->
+</div>
+<!-- Ends the review grid. -->
+</section>
+<!-- Ends the reviews section. -->
+
+<section class="newsletter section-alt">
+<!-- Creates the newsletter section. -->
+<div class="container newsletter-inner reveal">
+<!-- Centers the newsletter content. -->
+<div><p class="eyebrow">STAY IN THE LOOP</p><h2>New drops. Fresh ideas.</h2><p>Join our newsletter for collection updates and styling inspiration.</p></div>
+<!-- Displays newsletter information. -->
+<form class="newsletter-form" id="newsletterForm">
+<!-- Creates the newsletter subscription form. -->
+<label class="sr-only" for="newsletterEmail">Email address</label>
+<!-- Provides an accessible label for the email field. -->
+<input id="newsletterEmail" type="email" placeholder="Your email address" required>
+<!-- Creates the email input. -->
+<button class="btn btn-dark" type="submit">Subscribe</button>
+<!-- Creates the subscribe button. -->
+</form>
+<!-- Ends the newsletter form. -->
+<p class="form-message" id="newsletterMessage" aria-live="polite"></p>
+<!-- Displays newsletter feedback. -->
+</div>
+<!-- Ends the newsletter inner content. -->
+</section>
+<!-- Ends the newsletter section. -->
+</main>
+<!-- Ends the main content. -->
+
+<footer class="footer">
+<!-- Creates the website footer. -->
+<div class="container footer-grid">
+<!-- Creates the footer grid. -->
+<div><a class="brand brand-footer" href="index.html">UNIQ <span>WEAR</span></a><p>Modern unisex fashion for everyday expression.</p></div>
+<!-- Displays footer brand information. -->
+<div><h3>Explore</h3><a href="about.html">About</a><a href="shop.html">Shop</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div>
+<!-- Displays footer navigation. -->
+<div><h3>Contact</h3><p>Use our contact page for current store details.</p><a href="contact.html">Get in touch →</a></div>
+<!-- Displays footer contact information. -->
+</div>
+<!-- Ends the footer grid. -->
+<div class="container footer-bottom"><span>© 2026 UNIQ WEAR. All rights reserved.</span><span>Built with HTML, CSS & JavaScript.</span></div>
+<!-- Displays footer copyright. -->
+</footer>
+<!-- Ends the footer. -->
+<script src="js/script.js"></script>
+<!-- Loads the external JavaScript file. -->
+</body>
+<!-- Ends the visible document. -->
+</html>
+<!-- Ends the HTML document. -->
